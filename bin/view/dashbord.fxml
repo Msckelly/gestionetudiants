@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionetudiants.controller.ControllerDashbord">
+	<left>
+		<HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+			<children>
+				<VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #442a1b;">
+					<children>
+						<HBox alignment="CENTER" maxHeight="200.0" minHeight="200.0" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #442a1b;">
+							<children>
+								<ImageView fitHeight="183.0" fitWidth="275.0" pickOnBounds="true">
+									<image>
+										<Image url="@../../../../Downloads/ism-png2_prev_ui.png" />
+									</image>
+								</ImageView>
+								<ImageView fitHeight="51.0" fitWidth="50.0" pickOnBounds="true">
+									<image>
+										<Image url="@../../../../Downloads/icons8-menu-50.png" />
+									</image>
+								</ImageView>
+							</children>
+							<padding>
+								<Insets right="20.0" />
+							</padding>
+						</HBox>
+						<Pane prefHeight="31.0" prefWidth="371.0" style="-fx-background-color: #292929;" />
+						<VBox prefHeight="509.0" prefWidth="371.0">
+							<children>
+								<HBox alignment="CENTER" onMouseClicked="#tableauddebord" prefHeight="100.0" prefWidth="200.0">
+									<children>
+										<ImageView fitHeight="33.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../../../../Downloads/icons8-dashboard-layout-48.png" />
+											</image>
+										</ImageView>
+										<SplitPane prefHeight="68.0" prefWidth="10.0" style="-fx-background-color: #442a1b;" />
+										<Label style="-fx-font-weight: bold;" text="Tableau de bord" textFill="#fff9f9">
+											<font>
+												<Font size="24.0" />
+											</font>
+										</Label>
+									</children>
+									<padding>
+										<Insets right="40.0" />
+									</padding>
+								</HBox>
+								<HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#gestionprofesseurs" prefHeight="100.0" prefWidth="200.0">
+									<children>
+										<ImageView fitHeight="33.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../../../../Downloads/icons8-professor-47.png" />
+											</image>
+										</ImageView>
+										<SplitPane prefHeight="98.0" prefWidth="15.0" style="-fx-background-color: #442a1b;" />
+										<Label style="-fx-font-weight: bold;" text="Gestion professeurs" textFill="#fff9f9">
+											<font>
+												<Font size="24.0" />
+											</font>
+										</Label>
+									</children>
+								</HBox>
+								<HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" onMouseClicked="#gestionetudiants" prefHeight="100.0" prefWidth="200.0">
+									<children>
+										<ImageView fitHeight="33.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../../../../Downloads/icons8-students-48.png" />
+											</image>
+										</ImageView>
+										<SplitPane prefHeight="68.0" prefWidth="10.0" style="-fx-background-color: #442a1b;" />
+										<Label style="-fx-font-weight: bold;" text="Gestion étudiants" textFill="#fff9f9">
+											<font>
+												<Font size="24.0" />
+											</font>
+										</Label>
+									</children>
+									<padding>
+										<Insets right="30.0" />
+									</padding>
+								</HBox>
+								<HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" onMouseClicked="#vuegeneral" prefHeight="100.0" prefWidth="200.0">
+									<children>
+										<ImageView fitHeight="33.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../../../../Downloads/icons8-general-48.png" />
+											</image>
+										</ImageView>
+										<SplitPane prefHeight="68.0" prefWidth="10.0" style="-fx-background-color: #442a1b;" />
+										<Label style="-fx-font-weight: bold;" text="Vue générale" textFill="#fff9f9">
+											<font>
+												<Font size="24.0" />
+											</font>
+										</Label>
+									</children>
+									<padding>
+										<Insets right="80.0" />
+									</padding>
+								</HBox>
+								<HBox alignment="CENTER" layoutX="10.0" layoutY="310.0" onMouseClicked="#deconnexion" prefHeight="100.0" prefWidth="200.0">
+									<children>
+										<ImageView fitHeight="33.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../../../../Downloads/icons8-logout-rounded-48.png" />
+											</image>
+										</ImageView>
+										<SplitPane prefHeight="68.0" prefWidth="10.0" style="-fx-background-color: #442a1b;" />
+										<Label style="-fx-font-weight: bold;" text="Déconnexion" textFill="#fff9f9">
+											<font>
+												<Font size="24.0" />
+											</font>
+											<padding>
+												<Insets right="60.0" />
+											</padding>
+										</Label>
+									</children>
+									<padding>
+										<Insets right="25.0" />
+									</padding>
+								</HBox>
+							</children>
+						</VBox>
+					</children>
+				</VBox>
+			</children>
+		</HBox>
+	</left>
+	<center>
+		<AnchorPane fx:id="ap" prefHeight="701.0" prefWidth="961.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="menucontent" layoutX="-11.0" layoutY="-1.0" prefHeight="570.0" prefWidth="871.0" style="-fx-background-color: #e1e7d3;">
+               <children>
+                  <HBox prefHeight="109.0" prefWidth="829.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="169.0" prefWidth="1039.0">
+                           <children>
+                              <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/icons8-notification-48.png" />
+                                 </image>
+                              </ImageView>
+                              <Pane maxWidth="50.0" minWidth="15.0" prefHeight="109.0" prefWidth="0.0" />
+                              <Label text="Notification">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="169.0" prefWidth="1039.0">
+                           <children>
+                              <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/icons8-messages-48.png" />
+                                 </image>
+                              </ImageView>
+                              <Pane maxWidth="15.0" minWidth="15.0" prefHeight="169.0" prefWidth="5.0" />
+                              <Label text="Informations">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="169.0" prefWidth="1039.0">
+                           <children>
+                              <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/icons8-calendar-48.png" />
+                                 </image>
+                              </ImageView>
+                              <Pane maxWidth="15.0" minWidth="15.0" prefHeight="169.0" prefWidth="5.0" />
+                              <Label maxWidth="15.0" minWidth="-Infinity" text="Annee scolaire">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="169.0" prefWidth="1039.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="175.0" style="-fx-background-color: green;" text="2022-2023" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="45.0" prefWidth="917.0" />
+                  <HBox prefHeight="155.0" prefWidth="917.0">
+                     <children>
+                        <VBox prefHeight="261.0" prefWidth="292.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="82.0" fitWidth="113.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../../Downloads/icons8-student-64.png" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="136.0">
+                                       <children>
+                                          <Label text="Inscrits">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="43">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="34.0" fitWidth="53.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../../Downloads/icons8-all-48.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="100.0" prefWidth="33.0" />
+                                    <Label prefHeight="35.0" prefWidth="187.0" text="Total etudiants">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                        <Pane prefHeight="155.0" prefWidth="29.0" />
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="261.0" prefWidth="292.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="82.0" fitWidth="113.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../../Downloads/icons8-teacher-64.png" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="136.0">
+                                       <children>
+                                          <Label text="Inscrits">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="43">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="34.0" fitWidth="53.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../../Downloads/icons8-all-48.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="100.0" prefWidth="33.0" />
+                                    <Label prefHeight="35.0" prefWidth="187.0" text="Total professeurs">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                        <Pane prefHeight="155.0" prefWidth="31.0" />
+                        <VBox prefHeight="155.0" prefWidth="303.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="82.0" fitWidth="113.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../../Downloads/icons8-payment-history-68.png" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="136.0">
+                                       <children>
+                                          <Label text="Inscrits">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="43">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="34.0" fitWidth="53.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../../Downloads/icons8-all-48.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="100.0" prefWidth="33.0" />
+                                    <Label prefHeight="35.0" prefWidth="187.0" text="Total etudiants">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="21.0" prefWidth="917.0" />
+                  <HBox prefHeight="352.0" prefWidth="917.0">
+                     <children>
+                        <BarChart prefHeight="346.0" prefWidth="315.0">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </BarChart>
+                        <PieChart prefHeight="346.0" prefWidth="277.0" />
+                        <LineChart prefHeight="346.0" prefWidth="274.0">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="17.0" prefWidth="917.0" />
+                  <HBox alignment="CENTER" prefHeight="42.0" prefWidth="917.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="917.0" text="ISM, ÉTABLISSEMENT D’ENSEIGNEMENT SUPÉRIEUR PRIVÉ © 2020 - STUDIALIS - GALILEO GLOBAL EDUCATION - MENTIONS LÉGALES" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+	</center>
+</BorderPane>
