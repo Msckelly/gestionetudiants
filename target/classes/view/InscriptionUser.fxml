@@ -89,7 +89,7 @@
          <children>
             <HBox layoutX="13.0" layoutY="-16.0" prefHeight="76.0" prefWidth="859.0">
                <children>
-                  <Label prefHeight="59.0" prefWidth="857.0" text="Ensembles des etudiants">
+                  <Label prefHeight="59.0" prefWidth="857.0" text="Ensembles des utilisateurs">
                      <font>
                         <Font size="36.0" />
                      </font>
