@@ -17,7 +17,7 @@ public class ControllerInscription {
     @FXML
     void ajouteretd(MouseEvent event) {
 
-    	loadPage("popupAjoutInscription");
+    	loadPage("popupAjoutInscriptions");
     }
 
     @FXML
