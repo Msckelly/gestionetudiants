@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="menucontent" prefHeight="570.0" prefWidth="871.0" style="-fx-background-color: #e1e7d3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="menucontent" prefHeight="570.0" prefWidth="871.0" style="-fx-background-color: #e1e7d3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionetudiants.controller.ControllerGestionProfesseurs">
    <children>
       <HBox prefHeight="71.0" prefWidth="871.0">
          <children>
@@ -100,7 +100,7 @@
       </Pane>
       <HBox alignment="CENTER" prefHeight="69.0" prefWidth="871.0">
          <children>
-            <Button maxWidth="280.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="311.0" style="-fx-background-color: green;" text="Ajouter un professeurs" textFill="WHITE">
+            <Button maxWidth="280.0" mnemonicParsing="false" onMouseClicked="#ajoutprof" prefHeight="25.0" prefWidth="311.0" style="-fx-background-color: green;" text="Ajouter un professeurs" textFill="WHITE">
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin>
